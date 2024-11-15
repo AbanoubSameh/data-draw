@@ -1,9 +1,9 @@
 
 # DataDraw
 
-[DataDraw](https://your-app-link.com) is a Next.js application designed to make data visualization simple and intuitive. Users can upload a CSV file, specify their requirements, and let the application leverage OpenAI to generate visualizations, making the data easier to understand.  
+[DataDraw](https://data-draw.vercel.app/) is a Next.js application designed to make data visualization simple and intuitive. Users can upload a CSV file, specify their requirements, and let the application leverage OpenAI to generate visualizations, making the data easier to understand.  
 ![alt text](./public/Data%20draw.png)
-[**Try DataDraw**](https://your-app-link.com)
+[**Try DataDraw**](https://data-draw.vercel.app/)
 
 ## How It Works
 
@@ -64,6 +64,7 @@ To integrate OpenAI's capabilities, you need to set up your OpenAI API key:
 
    ```
    OPENAI_API_KEY=your_api_key_here
+   GETCHART_ASSISTANT=asst_afrfIMBZ7DHhcLk9aWFeVGZP
    ```
 
    Replace `your_api_key_here` with your actual OpenAI API key.
