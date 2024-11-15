@@ -15,6 +15,7 @@ export async function addUserMessage(
   userInput: string
 ): Promise<GenerateChartResponse | undefined> {
   "use server";
+
   return addMessage(threadId, {
     role: "user",
     content: `

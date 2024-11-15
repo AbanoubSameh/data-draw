@@ -1,9 +1,9 @@
 
 # DataDraw
 
-DataDraw is a Next.js application to make data visualization simple and intuitive. Users can upload CSV file, specify their requirements, and have the application leverage OpenAI to generate visualizations to help make sense of the data.
-
+[DataDraw](https://your-app-link.com) is a Next.js application designed to make data visualization simple and intuitive. Users can upload a CSV file, specify their requirements, and let the application leverage OpenAI to generate visualizations, making the data easier to understand.  
 ![alt text](./public/Data%20draw.png)
+[**Try DataDraw**](https://your-app-link.com)
 
 ## How It Works
 

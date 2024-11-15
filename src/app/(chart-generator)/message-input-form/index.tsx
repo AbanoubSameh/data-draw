@@ -17,8 +17,8 @@ export default function MessageInputForm({ threadId, stateUpdated }: MessageInpu
     const [message, setMessage] = useState('');
 
     useEffect(() => {
-        if (stateUpdated) {
-            stateUpdated({ spec: formState.result as Spec, message });
+        if (stateUpdated && formState?.result) {
+            stateUpdated({ spec: formState?.result as Spec, message });
             setMessage('')
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
