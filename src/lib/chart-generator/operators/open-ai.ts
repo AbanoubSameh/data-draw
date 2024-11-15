@@ -1,6 +1,7 @@
 import "server-only";
 import OpenAI from "openai";
-import { parse, Spec } from "vega";
+import type { Spec } from "vega";
+import { parse } from "vega";
 import {
   MessageCreateParams,
   TextContentBlock,
@@ -20,7 +21,6 @@ export const createAndRunThread = async (
   const run = await openai.beta.threads.runs.createAndPoll(threadId, {
     assistant_id: assistantId,
   });
-
   if (run.status === "completed") {
     const messages = await openai.beta.threads.messages.list(run.thread_id);
     const latestMessage = messages.data.at(0);

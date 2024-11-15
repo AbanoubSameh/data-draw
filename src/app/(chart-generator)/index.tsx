@@ -5,7 +5,7 @@ import ChatHistory from "./chat-history/chat-history"
 import { updateFile } from "@/lib/chart-generator"
 import { FileDefinition } from "@/components/ui/form/file-upload/models"
 import { useState } from "react"
-import { Spec } from "vega"
+import type { Spec } from "vega"
 import MessageInputForm from "./message-input-form"
 
 
@@ -41,7 +41,7 @@ export default function ChartGenerator({ threadId }: ChartGeneratorProps) {
                 <MessageInputForm threadId={threadId} stateUpdated={handleStateChange} />
             </div>
             <div className="w-3/4 flex justify-center items-center">
-                    <ChartPreview spec={spec} />
+                <ChartPreview spec={spec} />
             </div>
         </div>
     </div>

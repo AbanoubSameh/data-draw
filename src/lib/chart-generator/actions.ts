@@ -2,7 +2,7 @@
 
 import { FormActionState } from "@/lib/shared/form-action-base";
 import { revalidatePath } from "next/cache";
-import { Spec } from "vega";
+import type { Spec } from "vega";
 import { addUserMessage } from ".";
 
 export const submitUserInput = async (
