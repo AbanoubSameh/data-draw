@@ -1,38 +1,69 @@
+
 # DataDraw
 
-DataDraw is a Next.js application to make data visualization simple and intuitive. Users can upload CSV files, specify their requirements, and have the application leverage OpenAI to generate visualizations to help make sense of the data.
+DataDraw is a Next.js application to make data visualization simple and intuitive. Users can upload CSV file, specify their requirements, and have the application leverage OpenAI to generate visualizations to help make sense of the data.
+
 ![alt text](./public/Data%20draw.png)
 
 ## How It Works
 
-1. **Upload CSV**: Start by uploading a CSV file with your dataset.
-2. **Specify Requirements**: Describe the type of visualization you want using simple, natural language (e.g., "Show a bar chart of total sales by region"). The more accurate your description is, the better result you will get.
-3. **AI-Powered Visualization**: DataDraw will use OpenAI's capabilities to analyze your requirements and generate a suitable chart.
+1. **Upload CSV**: Begin by uploading a CSV file containing your dataset.
+2. **Specify Visualization Requirements**: Provide a description of the desired chart (e.g., "Show a pie chart of customer demographics by age"). The clearer your description, the more accurate the result.
+3. **Generate Visualization**: DataDraw utilizes OpenAI's capabilities to interpret your instructions and generate the appropriate chart for your data.
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js and npm installed
-- An OpenAI API key (required for AI integration)
+- **Node.js** and **npm** (or an alternative package manager) installed
+- **OpenAI API key** (necessary for AI functionality)
 
-### Development
+### Installation and Development Setup
 
-1. Clone the repository:
+1. **Clone the Repository**:
 
    ```bash
    git clone https://github.com/AbanoubSameh/data-draw.git
    cd data-draw
+   ```
 
+2. **Install Dependencies**:
 
-2. run the development server:
+   Choose your preferred package manager and install the dependencies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+
+3. **Run the Development Server**:
+
+   Start the server using your package manager:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+## Configuration
+
+To integrate OpenAI's capabilities, you need to set up your OpenAI API key:
+
+1. Create a `.env` file in the root directory of the project.
+2. Add your OpenAI API key:
+
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
+
+   Replace `your_api_key_here` with your actual OpenAI API key.
